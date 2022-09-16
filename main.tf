@@ -7,7 +7,7 @@ resource "random_password" "password" {
 
 
 resource "vault_generic_secret" "db" {
-  path = "company_passwords/db"
+  path = "passwords/db"
 
   data_json = jsonencode(
     {
